@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AutoViewPager">
+        <!-- 是否显示indicator -->
+        <attr name="showIndicator" format="boolean"/>
+        <!-- indicator未选中时的样式-->
+        <attr name="indicatorNormalIcon" format="reference"/>
+        <!-- indicator选中时的样式-->
+        <attr name="indicatorSelectedIcon" format="reference"/>
+        <!-- indicator的大小-->
+        <attr name="indicatorIconSize" format="dimension"/>
+        <!-- indicator距离底部或顶部的距离 -->
+        <attr name="indicatorLayoutMargin" format="dimension"/>
+        <!-- indicator之间的距离 -->
+        <attr name="indicatorGap" format="dimension"/>
+        <!-- indicator的位置 -->
+        <attr name="indicatorGravity">
+            <enum name="top" value="1"/>
+            <enum name="bottom" value="2"/>
+        </attr>
+
+        <!-- 自动播放时间 -->
+        <attr name="autoSwitchTime" format="integer"/>
+        <!-- 是否可自动播放 -->
+        <attr name="isAutoPlay" format="boolean"/>
+        <!-- 是否可循环播放 -->
+        <attr name="loopPlay" format="boolean"/>
+
+        <!-- Item之间的间距 -->
+        <attr name="pagerMargin" format="dimension"/>
+        <!-- viewPager左边的Padding -->
+        <attr name="pagerPaddingLeft" format="dimension"/>
+        <!-- viewPager右边的Padding -->
+        <attr name="pagerPaddingRight" format="dimension"/>
+        <!-- Item的宽度 -->
+        <attr name="pagerWidth" format="dimension"/>
+
+        <!-- 切换的动画 -->
+        <attr name="transformer">
+            <enum name="fade" value="1"/>
+            <enum name="scale" value="2"/>
+            <enum name="rotate" value="3"/>
+            <enum name="flip" value="4"/>
+            <enum name="square" value="5"/>
+            <enum name="turntable" value="6"/>
+            <enum name="cascading" value="7"/>
+        </attr>
+    </declare-styleable>
+</resources>
